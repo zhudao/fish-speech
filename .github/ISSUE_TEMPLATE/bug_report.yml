@@ -36,7 +36,7 @@ body:
     attributes:
       label: Environment Details
       description: "Provide details such as OS, Python version, and any relevant software or dependencies."
-      placeholder: e.g., macOS 13.5, Python 3.10, torch==2.4.1, Gradio 4.44.0
+      placeholder: e.g., Ubuntu 24.04, Python 3.12, torch==2.8.0, CUDA 12.9
     validations:
       required: true
   - type: textarea
@@ -45,7 +45,7 @@ body:
       description: |
         Include detailed steps, screenshots, and logs. Use the correct markdown syntax for code blocks.
       placeholder: |
-        1. Run the command `python -m tools.post_api -t "xxxxx"`
+        1. Run the command `python -m tools.api_client -t "xxxxx"`
         2. Observe the console output error: `ModuleNotFoundError: No module named 'pyaudio'` (with screenshots or logs will be better)
     validations:
       required: true
